@@ -1,0 +1,11 @@
+<div class="parent" [ngStyle]="{ 'background-color': color }">
+  <div class="tile-container">
+    <div *ngFor="let col of colors">
+      <div
+        class="tile"
+        [ngStyle]="{ 'background-color': col }"
+        (click)="onClick(col)"
+      ></div>
+    </div>
+  </div>
+</div>
